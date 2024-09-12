@@ -1,0 +1,21 @@
+//colors from telerik.com
+
+buttons_1: #eb0249 or rgb(235,2,73)
+button_text_color1: #fefdfb
+button_text_color2: #fefaf7
+
+banners-1: #5777ea or rgb(87,119,234)
+
+body: #edf4ff or rgb(237,244,255)
+
+cards: #ffffff or rgb(255,255,255)
+card-hover: #151950
+
+text-color1:  #000000
+text-color2:  #42506a
+text-color3:  #627edf
+
+footer_text_color1: #434446;
+footer_text_color1: #616161;
+
+icon bg: #627edf

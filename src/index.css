@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Inter:wght@400;500&display=swap');
+@import "@flaticon/flaticon-uicons/css/all/all";
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    * {
+        @apply m-0 p-0 box-border text-base outline-purple/50 duration-100;
+    }
+
+    html{
+        @apply overflow-x-hidden;
+    }
+
+    body {
+        @apply font-inter font-normal bg-body text-black;
+    }
+
+    /* Dark mood toggle */
+    .dark {
+        @apply bg-[#333] text-white;
+    }
+
+    /*-------- Dark mood toggle ------------- */
+    section{
+        @apply w-[85%] mx-auto;
+    }
+
+    .navbar{
+        @apply z-30 sticky top-0 flex items-center justify-between px-[10vw] py-5 h-[80px] border-b border-grey bg-white;
+    }
+    .btn-dark{
+        @apply whitespace-nowrap bg-buttons_1 text-button_text_color2 rounded-full py-2 px-5 text-xl capitalize hover:bg-opacity-80;
+    }
+
+    .btn-light{
+        @apply btn-dark bg-grey text-black;
+    }
+
+    /* ----------- */
+    .menu-items{
+        @apply relative text-2xl  tracking-[1px];
+    }
+    .menu-items::after{
+        @apply content-[''] bg-buttons_1 h-[3px] w-[0%] hover:w-[100%] absolute left-0 -bottom-[5px] rounded-xl  duration-300;
+    }
+
+    /* -----------footer bar --------------- */
+    .footer-line{
+        @apply relative tracking-[1px];
+    }
+    .footer-line::after{
+        @apply content-[''] bg-[#1c3fbd] h-[3px] w-[75%] absolute left-0 -bottom-[5px] rounded-xl shadow-sm shadow-[#1c3fbd];
+    }
+    /* -----------footer bar --------------- */
+
+    /* --------------hero ------------------ */
+    .overlay{
+        /* @apply absolute top-0 left-0 w-full h-full bg-gradient-to-r from-indigo-500; */
+    }
+
+}
